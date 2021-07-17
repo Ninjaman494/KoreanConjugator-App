@@ -11,7 +11,7 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class TestCustomApplication extends CustomApplication {
-    private String serverUrl;
+    private String serverUrl = "testUrl";
     private boolean isAdFree;
 
     @Override
