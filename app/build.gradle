@@ -105,34 +105,34 @@ def getApiKey(String property) {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'androidx.cardview:cardview:1.0.0'
-    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
     implementation 'androidx.preference:preference:1.1.1'
-    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.google.android.material:material:1.4.0'
     implementation 'org.jetbrains:annotations:21.0.1'
     implementation 'com.github.frankiesardo:linearlistview:1.0.1@aar'
     implementation 'com.codemybrainsout.onboarding:onboarder:1.0.4'
     implementation 'com.github.MFlisar:changelog:1.1.7'
 
     // Firebase
-    implementation platform('com.google.firebase:firebase-bom:26.0.0')
+    implementation platform('com.google.firebase:firebase-bom:26.8.0')
     implementation 'com.google.firebase:firebase-ads'
     implementation 'com.google.firebase:firebase-messaging'
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-crashlytics'
 
     // Favorites parsing
-    implementation 'com.google.code.gson:gson:2.8.5'
-    implementation 'com.google.guava:guava:30.1.1-android'
+    implementation 'com.google.code.gson:gson:2.8.7'
+    implementation 'com.google.guava:guava:30.1.1-jre'
 
     // Settings, About, Feedback
     implementation 'com.codemybrainsout.rating:ratingdialog:1.0.8'
     implementation 'com.github.eggheadgames:android-about-box:2.0.1'
-    implementation 'com.mikepenz:aboutlibraries:8.3.1'
+    implementation 'com.mikepenz:aboutlibraries:8.9.0'
     implementation 'org.rm3l:maoni:9.1.0@aar'
     implementation 'org.rm3l:maoni-email:9.1.0@aar'
     api 'org.rm3l:maoni-common:9.1.0@aar'
@@ -142,7 +142,7 @@ dependencies {
     implementation 'com.apollographql.apollo:apollo-runtime:2.5.9'
     implementation 'com.apollographql.apollo:apollo-http-cache:2.5.9'
     implementation 'com.apollographql.apollo:apollo-rx2-support:2.5.9'
-    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
 
     // Google Play Billing
     implementation 'com.android.billingclient:billing:4.0.0'
@@ -150,9 +150,9 @@ dependencies {
     // Testing dependencies
     implementation 'androidx.test.espresso:espresso-contrib:3.4.0' // Needed for idler
     implementation 'com.squareup.okhttp3:okhttp:4.9.1'
-    testImplementation 'junit:junit:4.13'
+    testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.mockito:mockito-core:3.11.2'
-    testImplementation 'org.robolectric:robolectric:4.2.1' // Can't be upgraded until #5454 is fixed
+    testImplementation 'org.robolectric:robolectric:4.6.1' // Can't be upgraded until #5454 is fixed
     testImplementation 'androidx.test:core:1.4.0'
     testImplementation 'androidx.test:rules:1.4.0'
     testImplementation 'androidx.test.espresso:espresso-intents:3.4.0'
